@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yongyongi/typescriptAPI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yongyongi/typescriptAPI/issues"
+  },
+  "homepage": "https://github.com/yongyongi/typescriptAPI#readme",
+  "devDependencies": {
+    "tsc-watch": "^4.5.0"
+  }
+}

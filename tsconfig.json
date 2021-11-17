@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "CommonJS",
+    "target": "ES2015",
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+
+  "include": ["src/**/*"], // 컴파일 할 파일 설정
+  "exclude": ["node_modules"] // 컴파일 하지 않을 파일 설정
+}
