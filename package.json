@@ -19,5 +19,8 @@
   "homepage": "https://github.com/yongyongi/typescriptAPI#readme",
   "devDependencies": {
     "tsc-watch": "^4.5.0"
+  },
+  "dependencies": {
+    "crypto-js": "^4.1.1"
   }
 }

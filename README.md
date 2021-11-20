@@ -166,6 +166,7 @@ ts파일을 모두 src밑에서 관리하고, 컴파일 된 자바스크립트 �
 작성해야 할 타입들이 많을 경우 인터페이스를 사용하여 가독성을 높일 수 있다.
 
 ```js
+//index.ts
 const name = "yongyong";
 const age = 29;
 const gender = "male";
@@ -182,6 +183,7 @@ export {};
 위 코드를 인터페이스를 사용하여 밑에와 같이 바꿀 수 있다.
 
 ```ts
+//index.ts
 interface Human {
   name: string;
   age: number;
@@ -204,3 +206,21 @@ export {};
 ```
 
 `person:Human`은 Human interface와 person이 같은 구조를 가지고 있는지 타입 검사를 해준다. interface는 자바스크립트에서는 작동하지 않기 때문에 index.js파일에서는 보이지 않는다.
+
+아주 가끔 인터페이스를 자바스크립트에 넣고 싶을때는 클래스(class)를 사용하면 된다. interface대신에 class를 넣으면 된다.
+
+```ts
+//index.ts
+class Human {
+  public name: string;
+  public age: number;
+  public gender: string;
+  constructor(name: string, age: number, gender: string) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+  }
+}
+```
+
+이렇게 클래스를 사용하면 자바스크립트에도 class가 생긴다. public과 private는 자바스크립트 파일에서 보이지 않는다.
